@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qr code Generador</title>
+
+    <!--Mobile console
+    <script src="https://cdn.jsdelivr.net/gh/c-kick/mobileConsole/hnl.mobileconsole.min.js"></script>-->
+
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body class="body">
+    <img src="./assets/logo-qr-generator.svg" alt="Logo" class="logo">
+
+    <div class="contenido-url">
+        <div class="container-url">
+            <input type="url" id="url" placeholder="Enter an url">
+            <button onclick="createQrCode();" class="btn" id="create-qr-code">QR code</button>
+        </div>
+    </div>
+
+    <footer>Desarrolado por: Joseph Rafael Sanchez <a href="https://wa.me/+5565981429242" target="_blank"> <i
+                class="fa-brands fa-whatsapp"></i></a> </i></footer>
+
+    <!--Liberia para crear el qr code-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+        integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/a101ea8c75.js" crossorigin="anonymous"></script>
+
+    <!--para poder convertir la div em una imagen-->
+    <script src="./html2canvas.min.js"></script>
+
+    <!--para poder copiar en dispositivos mobiles-->
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
